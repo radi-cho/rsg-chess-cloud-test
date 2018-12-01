@@ -1,0 +1,31 @@
+{
+  "name": "rsg-chess-cloud",
+  "version": "1.0.0",
+  "description": "App Engine runtime for RSG Chess used by RSG Robo Chess and the upcoming Android multiplayer mode.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "start": "node app.js",
+    "system-test": "repo-tools test app",
+    "test": "npm run system-test",
+    "e2e-test": "repo-tools test deploy"
+  },
+  "keywords": [
+    "RSG",
+    "Chess",
+    "google",
+    "cloud",
+    "cloud",
+    "App",
+    "Engine"
+  ],
+  "author": "Radi Cho",
+  "license": "ISC",
+  "dependencies": {
+    "rsg-chess": "^1.1.0-alpha.2",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^2.3.0"
+  }
+}

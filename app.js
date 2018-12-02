@@ -19,8 +19,9 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  var t0 = performance.now();
-  runRSGChess();
-  var t1 = performance.now();
-  console.log("Call to RSG Chess' AI took " + (t1 - t0) + " milliseconds.");
+  // var t0 = performance.now();
+  // runRSGChess();
+  // var t1 = performance.now();
+  // console.log("Call to RSG Chess' AI took " + (t1 - t0) + " milliseconds.");
+  console.log("App listening on port ", PORT);
 });
